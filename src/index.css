@@ -61,51 +61,51 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 270 30% 8%;
+    --background: 220 18% 7%;
     --foreground: 0 0% 98%;
 
-    --card: 270 28% 12%;
+    --card: 220 16% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 270 30% 8%;
+    --popover: 220 18% 7%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 190 95% 23%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 230 80% 50%;
+    --secondary: 230 50% 30%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 270 20% 18%;
+    --muted: 220 12% 16%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 200 90% 60%;
-    --accent-foreground: 0 0% 12%;
+    --accent: 200 80% 50%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 270 15% 20%;
-    --input: 270 15% 20%;
+    --border: 220 12% 18%;
+    --input: 220 12% 18%;
     --ring: 190 95% 23%;
 
-    --shadow-subtle: 0 2px 8px -1px hsl(0 0% 0% / 0.20);
-    --shadow-card: 0 6px 18px hsl(0 0% 0% / 0.20);
-    --shadow-glow: 0 0 16px hsl(190 95% 23% / 0.30);
+    --shadow-subtle: 0 2px 8px -1px hsl(0 0% 0% / 0.25);
+    --shadow-card: 0 8px 22px hsl(0 0% 0% / 0.35);
+    --shadow-glow: 0 0 14px hsl(190 95% 23% / 0.28);
 
-    --hero-overlay: linear-gradient(0deg, hsl(270 25% 12% / 0.60), hsl(270 25% 12% / 0.60));
+    --hero-overlay: linear-gradient(0deg, hsl(220 18% 7% / 0.65), hsl(220 18% 7% / 0.65));
 
     --gradient-primary: linear-gradient(0deg, hsl(var(--primary)), hsl(var(--primary)));
     --gradient-secondary: linear-gradient(0deg, hsl(var(--secondary)), hsl(var(--secondary)));
-    --gradient-hero: linear-gradient(0deg, hsl(var(--background)), hsl(var(--background)));
+    --gradient-hero: linear-gradient(135deg, hsl(220 18% 7%), hsl(220 16% 10%));
 
-    --sidebar-background: 270 30% 8%;
+    --sidebar-background: 220 18% 7%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 270 60% 50%;
+    --sidebar-primary: 230 50% 30%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 270 20% 18%;
+    --sidebar-accent: 220 12% 16%;
     --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 270 15% 20%;
+    --sidebar-border: 220 12% 18%;
     --sidebar-ring: 190 95% 23%;
   }
 }

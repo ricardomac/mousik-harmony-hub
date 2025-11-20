@@ -13,13 +13,13 @@ const Location = () => {
   };
 
   return (
-    <section id="localizacao" className="py-20 bg-muted/30">
+    <section id="localizacao" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-foreground">
             Venha Nos Visitar
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl max-w-2xl mx-auto text-foreground">
             Estamos localizados no centro de Alto Araguaia, prontos para receber você
           </p>
         </div>
@@ -27,7 +27,7 @@ const Location = () => {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Contact Info */}
           <div className="space-y-6">
-            <Card className="border-0 shadow-card">
+            <Card className="border border-border bg-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-display font-bold mb-6">
                   Informações de Contato
@@ -35,8 +35,8 @@ const Location = () => {
                 
                 <div className="space-y-6">
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-border flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold mb-1">Endereço</p>
@@ -45,8 +45,8 @@ const Location = () => {
                   </div>
 
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-secondary flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-border flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold mb-1">Telefone</p>
@@ -55,8 +55,8 @@ const Location = () => {
                   </div>
 
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-border flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold mb-1">E-mail</p>
@@ -65,8 +65,8 @@ const Location = () => {
                   </div>
 
                   <div className="flex gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-secondary flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-border flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-primary" />
                     </div>
                     <div>
                       <p className="font-semibold mb-1">Horário de Funcionamento</p>
@@ -76,16 +76,14 @@ const Location = () => {
                   </div>
                 </div>
 
-                <div className="mt-8 p-6 bg-gradient-primary rounded-xl text-white">
+                <div className="mt-8 p-6 rounded-xl bg-card">
                   <h4 className="font-display font-bold text-xl mb-3">
                     Agende Sua Aula Experimental Gratuita!
                   </h4>
-                  <p className="mb-4 opacity-90">
-                    Entre em contato conosco e experimente uma aula sem compromisso.
-                  </p>
+                  <p className="mb-4 text-muted-foreground">Entre em contato conosco e experimente uma aula sem compromisso.</p>
                   <Button
                     onClick={handleSchedule}
-                    className="w-full bg-white text-primary hover:bg-white/90 font-semibold"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold"
                   >
                     Quero Agendar Minha Aula
                   </Button>

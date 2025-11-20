@@ -27,7 +27,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-muted/20">
+    <section id="faq" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12 md:mb-16">

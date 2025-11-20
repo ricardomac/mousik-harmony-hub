@@ -84,10 +84,10 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden py-4 bg-background border-t border-border">
-            <div className="flex flex-col gap-4">
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden py-4 bg-background border-t border-border">
+              <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
