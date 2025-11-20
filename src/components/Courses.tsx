@@ -7,37 +7,31 @@ const Courses = () => {
       icon: Guitar,
       title: "Violão",
       description: "Do básico ao avançado, aprenda técnicas de violão popular e clássico.",
-      color: "from-primary to-secondary",
     },
     {
       icon: Piano,
       title: "Piano",
       description: "Explore o mundo do piano com metodologia moderna e eficaz.",
-      color: "from-secondary to-accent",
     },
     {
       icon: Drum,
       title: "Bateria",
       description: "Desenvolva ritmo e coordenação com aulas práticas de bateria.",
-      color: "from-primary to-accent",
     },
     {
       icon: Mic,
       title: "Canto",
       description: "Técnica vocal, afinação e interpretação para todos os estilos.",
-      color: "from-accent to-secondary",
     },
     {
       icon: Music,
       title: "Teoria Musical",
       description: "Entenda a linguagem da música e desenvolva sua percepção musical.",
-      color: "from-secondary to-primary",
     },
     {
       icon: Users,
       title: "Aulas em Grupo",
       description: "Aprenda música de forma colaborativa e divertida em turmas.",
-      color: "from-primary to-secondary",
     },
   ];
 
@@ -59,13 +53,13 @@ const Courses = () => {
             return (
               <Card
                 key={index}
-                className="group hover:shadow-glow transition-all duration-300 hover:-translate-y-2 border-0 shadow-card overflow-hidden"
+                className="group hover:-translate-y-1 transition-all duration-300 border border-border"
               >
                 <CardContent className="p-6">
                   <div
-                    className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${course.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
+                    className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors"
                   >
-                    <Icon className="w-8 h-8 text-primary-foreground" />
+                    <Icon className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-2xl font-display font-bold mb-3">
                     {course.title}

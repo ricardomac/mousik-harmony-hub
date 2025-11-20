@@ -38,12 +38,8 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(32 85% 55%), hsl(25 75% 45%));
-    --gradient-secondary: linear-gradient(135deg, hsl(25 45% 35%), hsl(20 40% 25%));
-    --gradient-hero: linear-gradient(135deg, hsl(25 45% 25% / 0.85), hsl(20 40% 20% / 0.9));
-    
-    --shadow-glow: 0 10px 40px -10px hsl(32 85% 55% / 0.35);
-    --shadow-card: 0 4px 20px -2px hsl(25 35% 15% / 0.08);
+    --shadow-subtle: 0 2px 8px -1px hsl(25 35% 15% / 0.06);
+    --hero-overlay: linear-gradient(135deg, hsl(25 45% 25% / 0.75), hsl(20 40% 20% / 0.8));
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
