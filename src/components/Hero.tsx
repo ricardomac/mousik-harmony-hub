@@ -26,20 +26,20 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10 text-center text-white">
+      <div className="container mx-auto px-4 relative z-10 text-center">
         <div className="max-w-4xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
-            <Music2 className="w-5 h-5" />
-            <span className="text-sm font-medium">Instituto Musical</span>
+          <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4 border border-primary/30">
+            <Music2 className="w-5 h-5 text-primary" />
+            <span className="text-sm font-medium text-background">Instituto Musical</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
+          <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight text-background drop-shadow-lg">
             Desperte o Músico
             <br />
             que Existe em Você
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-background/90 max-w-2xl mx-auto drop-shadow">
             Aprenda música com os melhores professores de Alto Araguaia. 
             Cursos para todas as idades e níveis.
           </p>
@@ -48,7 +48,7 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="bg-white text-primary hover:bg-white/90 shadow-glow text-lg px-8"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow text-lg px-8"
             >
               Agendar Aula Experimental
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -60,7 +60,7 @@ const Hero = () => {
                 const element = document.querySelector("#cursos");
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="border-2 border-white text-white hover:bg-white/10 text-lg px-8"
+              className="border-2 border-background bg-background/10 text-background hover:bg-background/20 backdrop-blur-sm text-lg px-8"
             >
               Nossos Cursos
             </Button>
