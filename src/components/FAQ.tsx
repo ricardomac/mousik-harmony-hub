@@ -27,17 +27,17 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-muted/30">
+    <section id="faq" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-primary mb-4">
-              <HelpCircle className="w-8 h-8 text-white" />
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 border border-border mb-4">
+              <HelpCircle className="w-7 h-7 text-primary" />
             </div>
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-3">
               Dúvidas Frequentes
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-lg md:text-xl text-muted-foreground">
               Tire suas principais dúvidas sobre nossos cursos
             </p>
           </div>
@@ -47,7 +47,7 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-background border-0 shadow-card rounded-xl px-6"
+                className="rounded-xl border border-border bg-card px-6 hover:-translate-y-[2px] transition-all hover:shadow-sm"
               >
                 <AccordionTrigger className="text-left font-display font-semibold text-lg hover:text-primary">
                   {faq.question}
