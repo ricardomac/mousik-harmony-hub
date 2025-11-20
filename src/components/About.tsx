@@ -5,8 +5,8 @@ const About = () => {
   const features = [
     {
       icon: Award,
-      title: "Professores Qualificados",
-      description: "Equipe com formação musical e experiência em ensino",
+      title: "Ensino Qualificado",
+      description: "Formação musical e experiência em ensino de qualidade",
     },
     {
       icon: Heart,
@@ -42,8 +42,8 @@ const About = () => {
               </p>
               <p>
                 Nossa missão é despertar e desenvolver o talento musical em pessoas de todas 
-                as idades, proporcionando um ambiente acolhedor, professores qualificados e 
-                metodologia moderna de ensino.
+                as idades, proporcionando um ambiente acolhedor, ensino qualificado e 
+                metodologia moderna.
               </p>
               <p>
                 Acreditamos que todos podem aprender música, independente da idade ou 
@@ -59,11 +59,11 @@ const About = () => {
               return (
                 <Card
                   key={index}
-                  className="group hover:shadow-glow transition-all duration-300 border-0 shadow-card"
+                  className="group hover:-translate-y-1 transition-all duration-300 border border-border"
                 >
                   <CardContent className="p-6 text-center">
-                    <div className="w-14 h-14 rounded-full bg-gradient-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                      <Icon className="w-7 h-7 text-white" />
+                    <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <Icon className="w-7 h-7 text-primary" />
                     </div>
                     <h3 className="font-display font-bold text-lg mb-2">
                       {feature.title}

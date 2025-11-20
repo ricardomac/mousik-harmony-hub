@@ -22,7 +22,7 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-hero" />
+        <div className="absolute inset-0" style={{ background: 'var(--hero-overlay)' }} />
       </div>
 
       {/* Content */}
@@ -48,7 +48,7 @@ const Hero = () => {
             <Button
               size="lg"
               onClick={scrollToContact}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow text-lg px-8"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8"
             >
               Agendar Aula Experimental
               <ArrowRight className="ml-2 w-5 h-5" />

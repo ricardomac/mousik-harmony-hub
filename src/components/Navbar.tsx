@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Music, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo-mousik.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,12 +46,10 @@ const Navbar = () => {
           <a
             href="#home"
             onClick={(e) => scrollToSection(e, "#home")}
-            className="flex items-center gap-2 text-2xl font-display font-bold"
+            className="flex items-center gap-3 text-2xl font-display font-bold"
           >
-            <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">
-              <Music className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
+            <img src={logo} alt="MOUSIK Logo" className="w-10 h-10" />
+            <span className="text-primary">
               MOUSIK
             </span>
           </a>
@@ -72,7 +71,7 @@ const Navbar = () => {
                 const element = document.querySelector("#localizacao");
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="bg-gradient-primary hover:opacity-90 transition-opacity shadow-glow"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
             >
               Agendar Aula
             </Button>
@@ -107,7 +106,7 @@ const Navbar = () => {
                   element?.scrollIntoView({ behavior: "smooth" });
                   setIsMobileMenuOpen(false);
                 }}
-                className="mx-4 bg-gradient-primary hover:opacity-90 transition-opacity"
+                className="mx-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
               >
                 Agendar Aula
               </Button>
