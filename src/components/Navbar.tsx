@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +16,10 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setMounted(true);
   }, []);
 
   const navLinks = [
@@ -31,6 +38,10 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     }
+  };
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -64,6 +75,21 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
+            {mounted && (
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={toggleTheme}
+                className="transition-colors"
+                aria-label="Alterar tema"
+              >
+                {theme === "dark" ? (
+                  <Sun className="w-5 h-5" />
+                ) : (
+                  <Moon className="w-5 h-5" />
+                )}
+              </Button>
+            )}
             <Button
               onClick={() => {
                 const element = document.querySelector("#localizacao");
@@ -98,6 +124,26 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              {mounted && (
+                <Button
+                  onClick={() => {
+                    toggleTheme();
+                  }}
+                  variant="outline"
+                  className="mx-4 transition-colors"
+                  aria-label="Alterar tema"
+                >
+                  {theme === "dark" ? (
+                    <>
+                      <Sun className="w-5 h-5 mr-2" /> Claro
+                    </>
+                  ) : (
+                    <>
+                      <Moon className="w-5 h-5 mr-2" /> Escuro
+                    </>
+                  )}
+                </Button>
+              )}
               <Button
                 onClick={() => {
                   const element = document.querySelector("#localizacao");
